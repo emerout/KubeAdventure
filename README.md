@@ -73,17 +73,25 @@ Si Pod1, 2, 3 sont de la même application, on les appelle des réplicats
 * k3d = k3s in Docker
 
 ----
+## kubectl
+
+L'outil en ligne de commande de kubernetes, kubectl, vous permet d'exécuter des commandes dans les clusters Kubernetes.
+
+https://kubernetes.io/fr/docs/tasks/tools/install-kubectl/
+
+> Installation
+
+    sudo apt-get update && sudo apt-get install -y apt-transport-https
+    curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+    echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+    sudo apt-get update
+    sudo apt-get install -y kubectl
+
 ## k3d
 
 * k3d = k3s + docker 
 * Doc : https://github.com/rancher/k3d
-* Prérequis
-
-> k3s
-    
-    curl -sfL https://get.k3s.io | sh -
-    sudo systemctl status k3s
-    kubectl cluster-info
+* Prérequis : docker
 
 > Installation
 
