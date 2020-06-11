@@ -44,7 +44,8 @@ d'applications gérées par kubernetes
 * Les pods tournent sur les nodes de type "Worker" (containers et plus ...)
 * Ce sont des conteneurs qui partagent la même stack réseau
 * Les sont identifiés via  un label comme tout objet Kubernetes
-> Exemple: 
+> Exemple:
+
      ------     -------
     |Node1  |  |Node2  |
      -------    -------
