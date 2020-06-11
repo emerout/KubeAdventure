@@ -43,6 +43,11 @@ d'applications gérées par kubernetes
 * Un pod est un conteneur au minimum ( peu être plus)
 * Les pods tournent sur les nodes de type "Worker" (containers et plus ...)
 * Ce sont des conteneurs qui partagent la même stack réseau
+
+> j'attirerais l'attention sur le fait qu'un pod ne partage pas juste la stack réseau, plus précisément un pod sont des containers side-car sur le même hôte pouvant communiquer ensemble via localhost
+partager la stack réseau ça me laisserait penser qu'ils sont dans le même /24 automatiquement
+et potentiellement sur des hôtes différents
+
 * Les sont identifiés via  un label comme tout objet Kubernetes
 > Exemple:
 
